@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar System Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav-header">
+    <div class="nav-container">
+      <a href="../index.html" class="back-link">
+        <span class="back-arrow">←</span>
+        Back to Projects
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Solar System Simulation</h1>
+      <p class="subtitle">Orbital time comparison and planetary insights</p>
+    </header>
+
+    <section class="introduction">
+      <p>
+        This project presents an animated visualization of our solar system. Each planet is represented with its unique orbit, tilt, and scale. The simulation compares how time flows differently across planets based on their revolution periods relative to Earth.
+      </p>
+      <p>
+        Using 3D animation, I explored planetary motion and axial tilts, while visually expressing how your age would appear on other planets.
+      </p>
+    </section>
+<section class="video-comparison" style="padding: 0;">
+  <h2 class="comparison-title" style="margin-bottom: 30px; border-radius: 100px;">Solar System</h2>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <video autoplay muted loop playsinline controls style="width: 100%; height: auto; border-radius: 8px;">
+      <source src="../Media/Solarsystem.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<div class="week" style="--delay: 0.1s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Sun</div>
+      <h3 class="week-title">Time Ratio: The Reference Point for Time in the Solar System</h3>
+    </div>
+    <p class="week-description">
+      The Sun is the heart of our solar system, providing light and heat to all the planets. Its immense gravity keeps the solar system bound together. All planetary orbits and year lengths are based relative to the time it takes Earth to orbit the Sun.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Sun.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
+    <section class="process-section">
+      <h2 class="process-title">Planets</h2>
+
+      <!-- Mercury -->
+     <div class="week" style="--delay: 0s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Mercury</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 4.15 Mercury Years</h3>
+    </div>
+    <p class="week-description">
+      Mercury is the closest planet to the Sun and completes its orbit in just 88 Earth days. It has no atmosphere to retain heat, resulting in extreme temperature shifts between day and night.
+    </p>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls
+      style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Mercury.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+   <!-- Venus -->
+<div class="week" style="--delay: 0.1s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Venus</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 1.62 Venus Years</h3>
+    </div>
+    <p class="week-description">
+      Venus has a dense, toxic atmosphere that traps heat, making it the hottest planet in the solar system. Its rotation is extremely slow and retrograde, meaning it spins in the opposite direction of most planets.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Venus.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Earth -->
+<div class="week" style="--delay: 0.2s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Earth</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 1 Earth Year</h3>
+    </div>
+    <p class="week-description">
+      Earth is our home planet, uniquely supporting life. It has a perfect balance of atmosphere, water, and distance from the Sun to sustain complex ecosystems.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Earth.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Mars -->
+<div class="week" style="--delay: 0.3s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Mars</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 0.53 Mars Years</h3>
+    </div>
+    <p class="week-description">
+      Known as the Red Planet, Mars has a thin atmosphere and is the most Earth-like in terms of potential habitability. A year on Mars is almost twice as long as on Earth.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Mars.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Jupiter -->
+<div class="week" style="--delay: 0.4s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Jupiter</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 0.08 Jupiter Years</h3>
+    </div>
+    <p class="week-description">
+      Jupiter is the largest planet in the solar system and has a powerful magnetic field. Its Great Red Spot is a giant storm that's been active for centuries.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Jupiter.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Saturn -->
+<div class="week" style="--delay: 0.5s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Saturn</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 0.03 Saturn Years</h3>
+    </div>
+    <p class="week-description">
+      Saturn is known for its stunning ring system composed of ice and rock. It's a gas giant like Jupiter, with many moons including Titan, which has a thick atmosphere.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Saturn.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Uranus -->
+<div class="week" style="--delay: 0.6s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Uranus</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 0.01 Uranus Years</h3>
+    </div>
+    <p class="week-description">
+      Uranus rotates on its side due to a massive collision early in its history. It has faint rings and a bluish color from methane in its atmosphere.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Uranus.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Neptune -->
+<div class="week" style="--delay: 0.7s; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+  <div class="week-content">
+    <div class="week-header">
+      <div class="week-number">Neptune</div>
+      <h3 class="week-title">Time Ratio: 1 Earth Year = 0.006 Neptune Years</h3>
+    </div>
+    <p class="week-description">
+      Neptune is the farthest known planet and has powerful winds that exceed the speed of sound. It's a deep blue gas giant with a very long orbital period.
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <video class="week-video" autoplay muted loop playsinline controls style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+      <source src="../Media/Neptune.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+    </section>
+  </div>
+</body>
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Jett Manalo. All rights reserved.</p>
+    <div class="footer-links">
+    </div>
+  </div>
+</footer>
+
+</html>

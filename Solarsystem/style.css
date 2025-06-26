@@ -1,0 +1,350 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        .back-arrow {
+            font-size: 1.2rem;
+        }
+
+        header {
+            text-align: center;
+            margin: 100px 0 80px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.2s forwards;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #888;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.4s forwards;
+        }
+
+        .introduction {
+            max-width: 800px;
+            margin: 0 auto 100px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.6s forwards;
+        }
+
+        .introduction p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+       .video-comparison {
+    padding: 2rem;
+    background-color: #111;
+    color: #fff;
+}
+
+.comparison-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video-container {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comparison-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+        .video-placeholder {
+            width: 100%;
+            height: 350px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+            position: relative;
+        }
+
+        .video-upload-area {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .upload-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            opacity: 0.5;
+        }
+
+        .video-placeholder:hover {
+            border-color: #555;
+        }
+
+        .process-section {
+            margin-top: 100px;
+        }
+
+        .process-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 60px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards;
+        }
+
+        .week {
+            padding: 40px 0;
+            border-bottom: 1px solid #222;
+            opacity: 0;
+            animation: fadeIn 1s ease-out calc(1.2s + var(--delay)) forwards;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .week:last-child {
+            border-bottom: none;
+        }
+
+        .week-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .week-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 20px;
+        }
+
+        .week-number {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-right: 25px;
+            min-width: 70px;
+        }
+
+        .week-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .week-description {
+            color: #aaa;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-left: 95px;
+        }
+
+        .week-video {
+            width: 100%;
+            height: 225px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.85rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .week-video:hover {
+            border-color: #555;
+        }
+
+        .week-video-label {
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .video-placeholder {
+                height: 250px;
+            }
+            
+            .week {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 30px 0;
+            }
+            
+            .week-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .week-number {
+                margin-right: 0;
+                margin-bottom: 8px;
+                min-width: auto;
+            }
+            
+            .week-description {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .week-video {
+                height: 200px;
+            }
+            
+            .process-title {
+                font-size: 2rem;
+            }
+        }
+    .site-footer {
+  background-color: #111;
+  color: #aaa;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
